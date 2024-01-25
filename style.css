@@ -1,0 +1,165 @@
+@import url('https:fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;&disply=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.main{
+    position: relative;
+    background: linear-gradient(120deg,#fff,#fff 62%,#00ffff 62%,#00ffff 100%);
+    min-height: 100vh;
+}
+header{
+    position:absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.header .logo img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+.app{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #00ffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.app:hover{
+    background: hsl(180, 92%, 40%);
+    color: #fff;
+}
+.app ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+.contentBx{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.contentBx .text{
+    max-width: 800px;
+}
+.contentBx .text h2{
+    font-size: 6em;
+    color:aquamarine;
+}
+.contentBx .text p{
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8em;
+}.contentBx .text h4{
+    margin: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.btn{
+    background: #00ffff;
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    padding:10px 15px;
+    font-size: 1.1em;
+    margin:5px 20px 5px 0;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: #333;
+}
+.btn ion-icon{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+.imgBx img{
+    margin-left: 450px;
+    margin-right: 100px;
+    max-width: 300px;
+    display: none;
+
+}
+.imgBx img.active{
+    display: block;
+}
+.dots
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.dots .dot{
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background: #333;
+    display: inline-flex;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.dots .dot.active{
+    background: #fff;
+}
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+
+}
+.sci li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+.sci li a{
+    font-size: 1.8em;
+    color: #3b5998;
+}
+.sci li a:hover{
+    color: #2d88ff;
+}
+/*for responsive ness*/
+@media (max-width:991px){
+header{
+    padding:30px
+    
+
+    }
+    .main{
+        padding: 30px;
+        background: #fff;
+
+    }
+    .app{
+        display: none;
+
+}
+.contentBx{
+    flex-direction: column-reverse;
+    margin: 100px 0;
+
+}
+.imgBx img{
+    margin: 0;
+}
+}
